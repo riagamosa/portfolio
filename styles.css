@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #F4F3EF;
+    color: #050517;
+    font-family: 'Questrial', Arial, Helvetica, sans-serif;
+}
+header {
+    padding: 2rem;
+    display: grid;
+    margin-top: -20px;
+}
+h1, h2 {
+    font-family: 'Balsamiq Sans', Georgia, 'Times New Roman', Times, serif;
+}
+#logo img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+#logo img:hover {
+    cursor: pointer;
+}
+nav {
+    font-family: 'Balsamiq Sans', Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    margin-top: -30px;
+}
+nav a {
+    text-decoration: none;
+    padding: 15px;
+    color: #818479;
+}
+nav a:hover {
+    color: #873D48;
+}
+
+/* index */
+#intro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+} 
+#intro img {
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+#introinfo {
+    text-align: right;
+    line-height: 25px;
+}
+#feat, #skills {
+    margin-top: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+#featgallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+#featgallery div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: grayscale(90%);
+}
+#featgallery div img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.view, .more {
+    font-family: 'Balsamiq Sans', Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #873D48;
+    border-radius: 50px;
+    background-color: #F4F3EF;
+    color: #873D48;
+    text-transform: uppercase;
+    font-size: smaller;
+}
+.more {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 350px;
+    margin-top: 30px;
+}
+.view:hover, .more:hover {
+    background-color: #873D48;
+    color: #F4F3EF;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+}
+#skillslist {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#skillslist ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+
+}
+#skillslist ul li {
+    list-style-type: none;
+    border: 1px solid #818479;
+    border-radius: 50px;
+    max-width: 200px;
+    padding: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* project list */
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: wavy;
+}
+.projlink {
+    text-decoration: none;
+    color: #050517;
+}
+.projlist {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 1px solid #818479;
+}
+
+.projlist:hover {
+    transform: translateX(20px);
+    border-bottom: 2px solid #818479;
+}
+/* project details */
+.projdes {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid #818479;
+    border-top: .5px solid #818479;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+article {
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 900px;
+    border: 1px solid #818479;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+}
+img {
+    margin: 0 auto;
+}
+figcaption {
+    text-transform: uppercase;
+    font-size: smaller;
+    padding: 15px;
+    line-height: 20px;
+}
+span {
+    font-weight: bolder;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    color: #818479;
+    padding: 1rem;
+    margin-top: 50px;
+}
