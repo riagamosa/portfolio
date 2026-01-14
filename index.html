@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ria Gamosa - Home | riagamosa.com</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f71a247e35.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-        <div id="logo">
-            <img src="images/logo.png" href="index.html" alt="my brand logo" width="792" height="504">
-        </div>
+        <a href="index.html" id="logo">
+            <img src="images/logo.png"  alt="my brand logo" width="792" height="504">
+        </a>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html" aria-current="page">Home</a>
             <a href="projects.html">Projects</a>
-            <a href="graphic.html">Graphic Design</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -29,44 +30,78 @@
             <h2>Web Development and Design Student</h2>
     
             <p>Aspiring Frontend Developer. I build clean, responsive, user-focused websites using HTML, CSS, JavaScript and PHP.</p>
-            <a href="projects.html" class="view">View Projects</a>
+            <a href="about.html" class="view">About Me</a>
         </div>
     </div>
     <div id="feat">
-        <h2>Recent Projects</h2>
+        <h2 class="section-title">Recent Projects</h2>
+        <p class="section-subtitle">Selected work showcasing design + development</p>
+        
         <div id="featgallery">
-            <div>
-                <a href="projects.canhol.html">
-                    <img src="images/canholidays.png" alt="screenshot of a website" width="300" height="200">
+
+            <article class="card">
+                <a href="projects.wrf.html" class="card__link">
+                  <img src="images/wildrose.png" alt="Wild Rose Foundry project screenshot">
+                  <div class="card__body">
+                    <h3>Wild Rose Foundry</h3>
+                    <p>Multi-vendor catalogue with PHP/MySQL templates, cart sessions, and JS UI features.</p>
+                    <ul class="chips">
+                      <li>HTML</li><li>CSS</li><li>PHP</li><li>MySQL</li><li>JavaScript</li>
+                    </ul>
+                  </div>
                 </a>
-            </div>
-            <div>
-                <a href="projects.oaa.html">
-                    <img src="images/outnabout.png" alt="screenshot of a website" width="300" height="200">
+              </article>
+              <article class="card">
+                <a href="projects.oaa.html" class="card__link">
+                  <img src="images/outnabout.png" alt="Out and About assignment screenshot">
+                  <div class="card__body">
+                    <h3>Out and About</h3>
+                    <p>A dynamic event-listing website built with PHP and MySQL.</p>
+                    <ul class="chips">
+                        <li>HTML</li><li>CSS</li><li>PHP</li><li>MySQL</li>
+                    </ul>
+                  </div>
                 </a>
-            </div>
-            <div>
-                <a href="projects.wrf.html">
-                    <img src="images/wildrose.png" alt="screenshot of a website" width="300" height="200">
+              </article>
+              <article class="card">
+                <a href="projects.canhol.html" class="card__link">
+                  <img src="images/canholidays.png" alt="Some Canadian Holidays assignment screenshot">
+                  <div class="card__body">
+                    <h3>Some Canadian Holidays</h3>
+                    <p>A JavaScript-powered website that displays Canadian holidays dynamically.</p>
+                    <ul class="chips">
+                        <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                    </ul>
+                  </div>
                 </a>
-            </div>
+              </article>
+
+              
         </div>
     </div>
     <div id="skills">
-        <h2>Languages & Technologies</h2>
+        <h2 class="section-title">Languages & Technologies</h2>
+        <p class="section-subtitle">Tools I use to build responsive interfaces</p>
+                
         <div id="skillslist">
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>MySQL</li>
+                <li><i class="fa-brands fa-html5"></i>HTML</li>
+                <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
+                <li><i class="fa-brands fa-square-js"></i>JavaScript</li>
+                <li><i class="fa-brands fa-php"></i>PHP</li>
+                <li><i class="fa-solid fa-database"></i>MySQL</li>
             </ul>
         </div>
     </div>
 
-    <footer>
-        &copy; 2026 Ria Gamosa | All Rights Reserved
+    <footer class="footer">
+        <p>© 2026 Ria Gamosa | All Rights Reserved</p>
+        <div class="footer__links">
+          <a href="mailto:gamosaria@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/riagamosa" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/riagamosa" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+        </div>
     </footer>
+
 </body>
 </html>

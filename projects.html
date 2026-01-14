@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ria Gamosa - Projects | riagamosa.com</title>
-    <link rel="stylesheet" href="styles.css"></head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f71a247e35.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
     <header>
-        <div id="logo">
-            <img src="images/logo.png" href="index.html" alt="my brand logo" width="792" height="504">
-        </div>
+        <a href="index.html" id="logo">
+            <img src="images/logo.png"  alt="my brand logo" width="792" height="504">
+        </a>
         <nav>
             <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="graphic.html">Graphic Design</a>
+            <a href="projects.html" aria-current="page">Projects</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <h1 class="title">My Projects</h1>
-    <section>
 
+    <section>
         <a href="projects.wrf.html" class="projlink">
             <div class="projlist">
                 <div>
@@ -29,7 +31,10 @@
                 </div>
                 <div>
                     <h2>Wild Rose Foundry</h2>
-                    <p><span>Technologies: </span>HTML, CSS, JavaScript, MySQL, PHP</p>
+                    <p class="projlistdes">Multi-vendor online catalogue and order system.</p>
+                    <p class="projlisttech">
+                        HTML · CSS · JavaScript · PHP · MySQL
+                    </p>
                 </div>
             </div>
         </a>
@@ -41,7 +46,10 @@
                 </div>
                 <div>
                     <h2>Out and About: Event Filtering Website</h2>
-                    <p><span>Technologies: </span>HTML, CSS, MySQL, PHP</p>
+                    <p class="projlistdes">Event filtering site.</p>
+                    <p class="projlisttech">
+                        HTML · CSS · PHP · MySQL
+                    </p>
                 </div>
             </div>
         </a>
@@ -53,15 +61,23 @@
                 </div>
                 <div>
                     <h2>Some Canadian Holidays: JavaScript Filter</h2>
-                    <p><span>Technologies: </span>HTML, CSS, JavaScript</p>
+                    <p class="projlistdes">Dynamic holiday list.</p>
+                    <p class="projlisttech">
+                        HTML · CSS · JavaScript
+                    </p>
                 </div>
             </div>
         </a>
-
     </section>    
 
-    <footer>
-        &copy; 2026 Ria Gamosa | All Rights Reserved
+    <footer class="footer">
+        <p>© 2026 Ria Gamosa | All Rights Reserved</p>
+        <div class="footer__links">
+          <a href="mailto:gamosaria@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/riagamosa" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/riagamosa" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+        </div>
     </footer>
+
 </body>
 </html>

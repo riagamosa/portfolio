@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ria Gamosa - Wild Rose Foundry | riagamosa.com</title>
-    <link rel="stylesheet" href="styles.css"></head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f71a247e35.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
     <header>
-        <div id="logo">
-            <img src="images/logo.png" href="index.html" alt="my brand logo" width="792" height="504">
-        </div>
+        <a href="index.html" id="logo">
+            <img src="images/logo.png"  alt="my brand logo" width="792" height="504">
+        </a>
         <nav>
             <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="graphic.html">Graphic Design</a>
+            <a href="projects.html" aria-current="page">Projects</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -34,8 +36,7 @@
             <figure>
                 <img src="images/wrf.home.png" alt="screenshot of the wild rose foundry homepage" width="700" height="732">
                 <figcaption>
-                    <p>*include a countdown until Christmas that appears on every top of single page</p>
-                    <p>*include a carousel showcasing images of featured items, pulled from the database of items marked as 'featured'</p>
+                    <p><span>Design note: </span>The countdown banner spans the full width of the page to ensure visibility and used #C0392B to create contrast while still complimenting the brand colours.</p>
                 </figcaption>           
             </figure>
         </article>
@@ -45,13 +46,13 @@
             <figure>
                 <img src="images/wrf.vendorlist.png" alt="screenshot of the wild rose foundry vendors page" width="700" height="988">
                 <figcaption>
-                    <p>*display of all vendors</p>
+                    <p><span>Design note: </span>Chose to include each of the vendors logo for easy distinction and representation.</p>
                 </figcaption>           
             </figure>
             <figure>
                 <img src="images/wrf.vendoreach2.png" alt="screenshot of the wild rose foundry vendors page" width="700" height="750">
                 <figcaption>
-                    <p>*display of each individual vendor and products they sell</p>
+                    <p><span>Design note: </span>Utilized flex to emphasize each individual vendor description while showcasing their products. The booth number is shown with #C0392B for contrast and clarity.</p>
                 </figcaption>           
             </figure>
         </article>
@@ -59,26 +60,24 @@
         <article>
             <h3>Products page</h3>
             <figure>
-                <img src="images/wrf.productlist1.png" alt="screenshot of the wild rose foundry products page" width="350" height="950">
-                <img src="images/wrf.productlist2.png" alt="screenshot of the wild rose foundry products page 2" width="350" height="950">
+                <img src="images/wrf.productlist2.png" alt="screenshot of the wild rose foundry products pagination" width="350" height="950">
                 <figcaption>
-                    <p>*incorporated pagination to view only 24 products at a time</p>
+                    <p><span>Design note: </span>Pagination was used for showing products at a limit of 24 at a time.</p>
                 </figcaption>           
             </figure>
             <figure>
                 <img src="images/wrf.productdetail.png" alt="screenshot of the wild rose foundry product detail page" width="700" height="750">
                 <figcaption>
-                    <p>*product variants - if applicable - are shown and dynamic with the product image</p>
+                    <p><span>Design note: </span>Achieved this by writing queries to pull data from phpMyAdmin for product variants and used JavaScript to make the product image dynamic with the chosen variant.</p>
                 </figcaption>           
             </figure>
         </article>
         <article>
             <h3>Categories page</h3>
             <figure>
-                <img src="images/wrf.categorylist.png" alt="screenshot of the wild rose foundry categories page" width="700" height="650">
                 <img src="images/wrf.categoryeach.png" alt="screenshot of the wild rose foundry individual category" width="700" height="1000">
                 <figcaption>
-                    <p>*products can be filtered by categories</p>
+                    <p><span>Design note: </span>Chose to display the products in each category the same as the products page to make it cohesive.</p>
                 </figcaption>           
             </figure>
         </article>
@@ -86,6 +85,9 @@
             <h3>About page</h3>
             <figure>
                 <img src="images/wrf.about.png" alt="screenshot of the wild rose foundry about page" width="700" height="650">
+                <figcaption>
+                    <p><span>Design note: </span>Chose to conclude the about page with direct links to Vendors and Products to align with user intent and provide a clear next step, reducing friction and supporting intuitive user flow.</p>
+                </figcaption>           
             </figure>
         </article>
         <article>
@@ -93,22 +95,29 @@
             <figure>
                 <img src="images/wrf.cartitem2.png" alt="screenshot of the wild rose foundry cart page" width="700" height="600">
                 <figcaption>
-                    <p>*user can add items from product detail page to cart, fill in information out to place order</p>
-                </figcaption>           
+                    <p><span>Design note: </span>Positioned the cart items alongside the checkout form to reinforce purchase confidence by allowing users to confirm their selections while completing their order.</p>
+                </figcaption>                    
             </figure>
             <figure>
                 <img src="images/wrf.thankyou.png" alt="screenshot of the wild rose foundry order confirmation page" width="700" height="450">
                 <figcaption>
-                    <p>*order confirmation let's the user know their order was placed successfully</p>
+                    <p><span>Design note: </span>A personalized order confirmation reassures users their submission was successful and improving overall user experience.</p>
                 </figcaption>           
+          
             </figure>
         </article>
     </section>
 
     <a href="projects.html" class="more">View more projects</a>
-    
-    <footer>
-        &copy; 2026 Ria Gamosa | All Rights Reserved
+
+    <footer class="footer">
+        <p>© 2026 Ria Gamosa | All Rights Reserved</p>
+        <div class="footer__links">
+          <a href="mailto:gamosaria@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/riagamosa" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/riagamosa" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+        </div>
     </footer>
+    
 </body>
 </html>
