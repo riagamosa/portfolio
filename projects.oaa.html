@@ -14,12 +14,18 @@
         <a href="index.html" id="logo">
             <img src="images/logo.png"  alt="my brand logo" width="792" height="504">
         </a>
-        <nav>
-            <a href="index.html">Home</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+        </button>
+        
+        <nav id="site-nav" class="site-nav">
+            <a href="index.html" >Home</a>
             <a href="projects.html" aria-current="page">Projects</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-        </nav>
+        </nav>    
     </header>
 
     <h1 class="title">My Projects</h1>
@@ -59,6 +65,8 @@
           <a href="https://github.com/riagamosa" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
