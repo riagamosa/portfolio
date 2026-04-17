@@ -254,7 +254,6 @@ nav a[aria-current="page"] {
 /* project list */
 .title {
     text-align: center;
-    text-transform: uppercase;
 }
 section {
     width: min(1100px, calc(100% - 32px));
@@ -384,6 +383,11 @@ figcaption {
 }
 figcaption p {
     margin: 6px 0;
+}
+
+/* graphic */
+.side-to-side {
+    display: flex;
 }
 
 /* about */
